@@ -1,0 +1,81 @@
+<html>
+
+<head>
+	
+</head>
+
+<body>
+
+	<style>
+		body{
+			background: #000;
+		}
+
+        .video {
+            color: #000;
+            margin-top: 3px;
+            text-align: center;
+            margin-left: auto;
+            align-items: center;
+        }
+
+        .img{
+            margin-top: 3px;
+            text-align: center;
+            margin-left: 150px;
+            padding-left: 160px;
+          cursor: pointer;
+          color: #fff;
+          padding-bottom: 30px;
+/*          border-radius: 10px;
+          box-shadow: 0 2px #999;*/
+        }
+
+
+        .bubbles h1{
+        font-family: arial;
+        align-items: center;
+        text-align: center;
+        font-family: 'Luckiest Guy', cursive;
+        margin-top: 10px;
+        color: #fff;
+        font-size: 45px;
+        }
+
+        .button{
+        	padding: 16px 55px;
+          font-size: 16px;
+          margin-left:335px ;
+          text-align: center;
+          cursor: pointer;
+          align-content: center;
+          color: #fff;
+          background-color: #000;
+          border-radius: 10px;
+          box-shadow: 0 2px #999;
+        }
+
+        .button:hover {background-color: #3e8e41}
+
+
+</style>
+	<BR>
+	<div class="bubbles">
+	<h1>TRAFCO</h1>
+	</div>
+	<br>
+<form method="POST">
+    <br><br><br><br>
+    <span style="align-content: left;">
+      <img class="img" src="/static/car2.png" height="250" width="300" alt="Girl in a jacket">
+      <img class="img" src="/static/car.png" height="200" width="250" alt="Girl in a jacket"><br>
+          <button class="button" formaction="{{url_for('ilearn')}}" type="submit"><a href="{{url_for('ilearn')}}">Traffic Control System</a></button>
+          
+              
+          <button class="button" formaction="{{url_for('concar')}}" type="submit"><a href="{{url_for('concar')}}"> Connected Cars</a></button>
+
+  </span> 
+  </form>
+
+</body>
+</html>

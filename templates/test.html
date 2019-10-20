@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        function OnFileLoad() {
+            var file = "data.txt";
+            // var textType = /text.*/;
+            var fileDisplayArea = document.getElementById("FileContent");
+                var reader = new FileReader();
+
+                reader.onload = function (e) {
+                    fileDisplayArea.innerText = reader.result;
+                }
+
+                reader.readAsText(file);
+            } else {
+                fileDisplayArea.innerText = "File not supported!"
+            }
+    </script>
+</head>
+
+<body>
+    <input type="file" id="FileReader" onchange="OnFileLoad()" />
+    <div id="FileContent" >Your content will appear here</div>
+</body>
+
+</html>
